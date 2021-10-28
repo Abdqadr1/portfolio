@@ -8,6 +8,7 @@
       event.preventDefault();
 
       let thisForm = this;
+      console.log(thisForm);
 
       let action = thisForm.getAttribute('action');
       let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
