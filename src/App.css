@@ -40,3 +40,14 @@
     transform: rotate(360deg);
   }
 }
+
+/* logo styling */
+.logo{
+  font-size: 25px;
+  background-color: rgba(218, 211, 220, 0.85);
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}

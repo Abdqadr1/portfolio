@@ -1,6 +1,6 @@
 import portfolio from "../images/portfolio.png";
 import About from "./about";
-import Brands from "./brands";
+import Stacks from "./stacks";
 import Contact from "./contact";
 import Portfolios from "./portfolio";
 import Services from "./services";
@@ -22,7 +22,7 @@ const Home = () => {
                     </div>
                 </div>
             </header>
-            <Brands />
+            <Stacks />
             <Services />
             <Portfolios />
             <About />

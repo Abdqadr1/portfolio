@@ -1,3 +1,5 @@
+import { Col, Row } from "react-bootstrap";
+
 const Contact = () => {
     return ( 
         <>
@@ -7,39 +9,39 @@ const Contact = () => {
                 <p className="text-paragraph-16">Contact me for freelance/contract work, consulting, or if you want to chat! I'd be
                     happy to hear from you.</p>
                 </div>
-                <div className="contact-container">
-                <form action="" className="form">
-                    <div className="contact-row row">
-                    <div className="contact-input col-md-6">
-                        <label for="name" className="form-label">Name</label>
-                        <input type="text" id="name" className="form-control" placeholder="John Doe" required/>
-                    </div>
-                    <div className="contact-input col-md-6">
-                        <label for="email" className="form-label">Email</label>
-                        <input type="text" id="email" className="form-control" placeholder="test@test.com" required/>
-                    </div>
-                    </div>
-                    <div className="contact-row row">
-                    <div className="contact-input col-md-6">
-                        <label for="number" className="form-label">Phone number</label>
-                        <input type="number" id="number" className="form-control" placeholder="000-000-0000" required/>
-                    </div>
-                    <div className="contact-input col-md-6">
-                        <label for="subject" className="form-label">Subject</label>
-                        <input type="text" id="subject" className="form-control" placeholder="type here" required/>
-                    </div>
-                    </div>
-                    <div className="contact-row row">
-                    <div className="contact-input">
-                        <label for="textares" className="form-label">Message</label>
-                        <textarea type="text" id="textarea" className="form-control" rows="3" placeholder="type here"></textarea>
-                    </div>
-                    </div>
-                    <div className="contact-row d-flex flex-row-reverse">
-                    <a href="/" className="btn btn-primary justify-content-end">Submit</a>
-                    </div>
-                </form>
-                </div>
+                
+                <Row className="justify-content-center mx-0">
+
+                    <Col lg="6" className="text-paragraph-14">
+
+                        <div className="row">
+                        <div className="col-md-12">
+                            <div className="info-box">
+                            <i className="bi bi-geo-alt fs-2"></i>
+                            <h3>Address</h3>
+                            <p>10A Elenusonso Eleyele, Ibadan, Oyo state, Nigeria 200229</p>
+                            </div>
+                        </div>
+                        <div className="col-md-6">
+                            <div className="info-box mt-4">
+                                <i className="bi bi-envelope fs-2"></i>
+                                <h4 className="mb-3">Email Me</h4>
+                                <a className="d-block text-paragraph-14" href="mailto: abolarinwaquadri@gmail.com">abolarinwaquadri@gmail.com</a>
+                                <a className="d-block text-paragraph-14" href="mailto: abdqadr95@gmail.com">abdqadr95@gmail.com</a>
+                            </div>
+                        </div>
+                        <div className="col-md-6">
+                            <div className="info-box mt-4">
+                            <i className="bi bi-telephone fs-2"></i>
+                            <h4 className="mb-3">Call Me</h4>
+                            <p>+234 9038539654<br/>+234 8115213342</p>
+                            </div>
+                        </div>
+                        </div>
+
+                    </Col>
+
+                </Row>
             </section>
         </>
      );
