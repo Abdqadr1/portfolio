@@ -3,7 +3,7 @@ const Footer = () => {
         <>
              <footer className="footer">
                 <div className="footer-container">
-                <a href="/" className="footer-logo">Ronny.</a>
+                <a href="/" className="footer-logo">Quadri</a>
                 <ul>
                     <li>
                     <a href="#Service" className="footer-text">Service</a>

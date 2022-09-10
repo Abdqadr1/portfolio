@@ -18,7 +18,10 @@ const Stacks = () => {
                             <Icon icon="logos:java" />
                     </div>
                      <div className="logo">
-                            <Icon icon="logos:javascript" />
+                        <Icon icon="logos:javascript" />
+                    </div>
+                    <div className="logo">
+                        <Icon icon="vscode-icons:file-type-typescriptdef-official" />
                     </div>
                     <div className="logo">
                         <Icon icon="logos:php" />
