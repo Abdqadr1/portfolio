@@ -1,9 +1,6 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../images/logo.png";
-import twitter from "../images/twiter.png";
-import github from "../images/github.png";
-import figma from "../images/figma.png";
-import dribble from '../images/dribbble.png';
+import { Icon } from '@iconify/react';
 const NavBar = () => {
     return ( 
         <Navbar bg="white" expand="md">
@@ -26,41 +23,17 @@ const NavBar = () => {
                     <Nav.Link href="#contact">Contact</Nav.Link>
                 </Nav>
                 <Nav className="ms-auto text-start flex-row">
-                    <Nav.Link className="me-2 me-md-0" href="#home">
-                        <img
-                            alt=""
-                            src={twitter}
-                            width="22"
-                            height="22"
-                            className="d-inline-block align-top"
-                            />
-                        </Nav.Link>
-                    <Nav.Link className="mx-2 mx-md-0" href="#home">
-                        <img
-                            alt=""
-                            src={dribble}
-                            width="22"
-                            height="22"
-                            className="d-inline-block align-top"
-                            />
+                    <Nav.Link className="me-2 me-md-0" href="https://twitter.com/olaleyone">
+                        <Icon className="fs-5" icon="akar-icons:twitter-fill" />
                     </Nav.Link>
-                    <Nav.Link className="mx-2 mx-md-0" href="#home">
-                        <img
-                            alt=""
-                            src={figma}
-                            width="22"
-                            height="22"
-                            className="d-inline-block align-top"
-                            />
-                        </Nav.Link>
-                    <Nav.Link className="mx-2 mx-md-0" href="#home">
-                        <img
-                            alt=""
-                            src={github}
-                            width="22"
-                            height="22"
-                            className="d-inline-block align-top"
-                            />
+                    <Nav.Link className="mx-2 mx-md-0" href="https://web.facebook.com/abolarinwa.quadri/">
+                        <Icon className="fs-5" icon="brandico:facebook" />
+                    </Nav.Link>
+                    <Nav.Link className="mx-2 mx-md-0" href="https://www.linkedin.com/in/abolarinwa-quadri-a08b39144">
+                        <Icon className="fs-5" icon="akar-icons:linkedin-box-fill" />
+                    </Nav.Link>
+                    <Nav.Link className="mx-2 mx-md-0" href="https://github.com/abdqadr1">
+                        <Icon className="fs-5" icon="akar-icons:github-fill" />
                     </Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
