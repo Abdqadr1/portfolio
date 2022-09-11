@@ -17,10 +17,9 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto text-start">
-                    <Nav.Link href="#service">Service</Nav.Link>
-                    <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-                    <Nav.Link href="#blog">Blog</Nav.Link>
-                    <Nav.Link href="#contact">Contact</Nav.Link>
+                    <Nav.Link href="#Service">Service</Nav.Link>
+                    <Nav.Link href="#Portfolio">Portfolio</Nav.Link>
+                    <Nav.Link href="#Contact">Contact</Nav.Link>
                 </Nav>
                 <Nav className="ms-auto text-start flex-row">
                     <Nav.Link className="me-2 me-md-0" href="https://twitter.com/olaleyone">

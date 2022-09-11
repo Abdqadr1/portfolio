@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 const Contact = () => {
     return ( 
         <>
-            <section id="Contact" className="contact">
+            <section id="Contact" className="contact jack">
                 <div className="sub-heading">
                 <h2 className="heading-secondary">Contact me</h2>
                 <p className="text-paragraph-16">Contact me for freelance/contract work, consulting, or if you want to chat! I'd be
@@ -26,15 +26,16 @@ const Contact = () => {
                             <div className="info-box mt-4">
                                 <i className="bi bi-envelope fs-2"></i>
                                 <h4 className="mb-3">Email Me</h4>
-                                <a className="d-block text-paragraph-14" href="mailto: abolarinwaquadri@gmail.com">abolarinwaquadri@gmail.com</a>
-                                <a className="d-block text-paragraph-14" href="mailto: abdqadr95@gmail.com">abdqadr95@gmail.com</a>
+                                <a className="d-block text-paragraph-14 text-decoration-none" href="mailto: abolarinwaquadri@gmail.com">abolarinwaquadri@gmail.com</a>
+                                <a className="d-block text-paragraph-14 text-decoration-none" href="mailto: abdqadr95@gmail.com">abdqadr95@gmail.com</a>
                             </div>
                         </div>
                         <div className="col-md-6">
                             <div className="info-box mt-4">
                             <i className="bi bi-telephone fs-2"></i>
                             <h4 className="mb-3">Call Me</h4>
-                            <p>+234 9038539654<br/>+234 8115213342</p>
+                            <a className="d-block text-paragraph-14 text-decoration-none" href="tel: +2349038539654">+234 9038539654</a>
+                            <a className="d-block text-paragraph-14 text-decoration-none" href="tel: +2348115213342">+2348115213342</a>
                             </div>
                         </div>
                         </div>

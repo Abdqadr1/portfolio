@@ -2,9 +2,9 @@ import { Icon } from '@iconify/react';
 const Stacks = () => {
     return ( 
         <>
-            <section class="section-brands">
-                <div class="brand-border"></div>
-                <div class="brands">
+            <section className="section-brands">
+                <div className="brand-border"></div>
+                <div className="brands">
                     <div className="logo">
                         <Icon icon="logos:spring" />
                     </div>
@@ -45,7 +45,7 @@ const Stacks = () => {
                         <Icon icon="logos:laravel" />
                     </div>
                 </div>
-                <div class="brand-border"></div>
+                <div className="brand-border"></div>
             </section>
         </>
      );

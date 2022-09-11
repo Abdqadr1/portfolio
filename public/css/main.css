@@ -352,6 +352,9 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 20px 0;
   text-align: center;
 }
+.footer-text{
+  color: #fff !important;
+}
 
 .footer-logo {
   color: #fff;
@@ -739,6 +742,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .portfolio-card-content {
+  text-decoration: none;
   padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
