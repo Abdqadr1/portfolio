@@ -1,0 +1,67 @@
+/* for light mode  */
+.light .bg-white{
+   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+}
+
+/* for dark mode */
+.dark-mode .bg-white{
+    background-color: var(--bg-color) !important;
+}
+.dark-mode .nav-link{
+    color: var(--nav-color) !important;
+}
+.dark-mode .nav-link:hover {
+    color: var(--hover-color) !important;
+}
+.dark-mode .about,
+.dark-mode .service {
+    background-color: var(--about-bg-color) !important;
+}
+.dark-mode .contact,
+.dark-mode .portfolio{
+    background-color: var(--contact-bg-color) !important;
+}
+.dark-mode .header{
+    background-color: var(--bg-color) !important;
+}
+
+.dark-mode .footer,
+.dark-mode .section-brands{
+    background-color: var(--about-bg-color) !important;
+}
+.dark-mode .back-to-top{
+    background-color: var(--bg-color);
+}
+.dark-mode .back-to-top:hover {
+    background-color: var(--hover-color);
+}
+
+.dark-mode .bg-body{
+    background-color: var(--bg-color) !important;
+    color: var(--txt-color);
+}
+.dark-mode .shadow{
+    box-shadow: 0 .5rem 1rem var(--shadow-color) !important;
+}
+
+.dark-mode .about-content, 
+.dark-mode .heading-secondary,
+.dark-mode .text-paragraph-16,
+.dark-mode .text-paragraph-14,
+.dark-mode .heading-tertiary {
+    color: var(--about-content-color) !important;
+}
+
+.dark-mode .navbar-toggler, .dark-mode .navbar-toggler-icon{
+    background-color: var(--nav-color);
+}
+
+@media screen and (max-width: 768px) {
+
+    .dark-position{
+        position: absolute;
+        left: calc(50% - 22.6px);
+        top: calc(14px)
+    }
+    
+}

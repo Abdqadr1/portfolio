@@ -1,0 +1,12 @@
+.dark-mode{
+    --primary-color: #eee;
+    --hover-color: #7562E0;
+    --color: #000;
+    --bg-color: #000;
+    --txt-color: #6d6a6a;
+    --nav-color: #fff;
+    --about-bg-color: rgb(31, 30, 30);
+    --contact-bg-color: rgb(27, 25, 25);
+    --about-content-color: #fff;
+    --shadow-color: rgba(128, 124, 124, 0.15);
+}

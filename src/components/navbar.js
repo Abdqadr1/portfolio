@@ -1,13 +1,12 @@
-import { Navbar, Container, Nav, Button } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../images/logo.png";
 import { Icon } from '@iconify/react';
+import DarkMode from "./dark-mode";
 const NavBar = () => {
-    const handleToggle = e => {
-        console.log(e);
-    }
+   
     return ( 
         <Navbar bg="white" expand="md" id="Navbar">
-            <Container>
+            <Container className="position-relative">
                 <Navbar.Brand href="#home">
                     <img
                         alt=""
@@ -39,7 +38,9 @@ const NavBar = () => {
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
-                <Button onClick={handleToggle}>Toggle</Button>
+                <div className="dark-position ms-3">
+                    <DarkMode />
+                </div>
             </Container>
         </Navbar>
      );

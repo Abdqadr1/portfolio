@@ -1,8 +1,9 @@
 import { useEffect, useRef } from "react";
-import { Carousel, Row, Col } from "react-bootstrap";
+import { Carousel, Row, Col, Container } from "react-bootstrap";
 import { useParams } from "react-router";
 import projects from "./allproject";
 import observe from "./observer";
+import DarkMode from "./dark-mode";
 
 const ProjectDetails = () => {
     const { name } = useParams();
@@ -16,10 +17,15 @@ const ProjectDetails = () => {
     if (!project) return <h3 className="fw-bold mt-5">Not found</h3>
     return ( 
         <div className="pb-4 pt-2">
-            <h2 className="heading-secondary fs-3 text-start mt-2 mb-4 ps-3">{project.name}</h2>
+            <Container>
+                <div className="d-flex justify-content-between">
+                    <h2 className="heading-secondary fs-3 text-start mt-2 mb-4 ps-3">{project.name}</h2>
+                    <DarkMode/>
+                </div>
+            </Container>
             <Row className="justify-content-center mx-0 px-5">
-                <Col sm="11" md="8" className="p-5 border rounded">
-                    <Carousel className="carousel" variant="dark">
+                <Col sm="11" md="8">
+                    <Carousel className="carousel p-3 shadow rounded" variant="dark">
                         {
                             project.images.map((image, i) => (
                                 <Carousel.Item interval={1000} key={i}>

@@ -20,7 +20,7 @@ const Home = () => {
         <>
         <NavBar />
             <header ref={ref} className="header" data-animate="zoom">
-                <div className="header-container">
+                <div className="header-container py-3">
                     <div className="header-content text-start">
                         <h1 className="heading-primary">Hello, I’m Quadri</h1>
                         <h3 className="header-text">Frontend & Backend Developer | DevOps Engineer </h3>

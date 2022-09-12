@@ -3,6 +3,7 @@
   min-height: 100vh;
   font-family: "Inter", sans-serif !important;
   color: #545454;
+  background-color: var(--bg-color) !important;
 }
 
 /* *{
@@ -109,9 +110,21 @@
   animation-duration: 2s;
 }
 .carousel{
-  height: 380px;
+  height: 450px;
   margin: auto;
 }
 .p-title{
   width: fit-content;
+}
+
+.carousel-indicators{
+  display: none !important;
+}
+.carousel-inner, .carousel-item, .carousel-item > img{
+  height: 100%;
+}
+
+.dark-toggle{
+  cursor: pointer;
+  color: var(--nav-color);
 }

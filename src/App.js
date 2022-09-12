@@ -1,10 +1,18 @@
 import "animate.css";
 import './App.css';
+import './mode.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ProjectDetails from "./components/details";
+import { enableDarkMode } from "./components/mode";
+import { useEffect } from "react";
 function App() {
+    useEffect(() => {
+        if (localStorage.getItem("mode") === "dark") {
+            enableDarkMode();
+        }
+    }, [])
   return (
     <BrowserRouter>
       <div className="App">
