@@ -1,8 +1,29 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Nav } from "react-bootstrap";
+import arrow from "../images/icons/arrow-up.svg";
+import { useRef, useEffect } from "react";
 const Footer = () => {
+    const bRef = useRef();
+
+    useEffect(() => {
+        if (bRef.current) {
+            let backtotop = bRef.current;
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 100) {
+                    backtotop.classList.add('active')
+                } else {
+                    backtotop.classList.remove('active')
+                }
+            })
+        }
+        
+    })
+
     return ( 
         <>
+            <a ref={bRef} href="#Navbar" className="back-to-top d-flex align-items-center justify-content-center">
+                <img src={arrow} alt="" />
+            </a>
              <footer className="footer">
                 <div className="footer-container">
                 <a href="#" className="footer-logo">Quadri</a>
@@ -21,7 +42,7 @@ const Footer = () => {
                     </li>
                 </ul>
                 <div className="footer-copyright">
-                    <p>All right reserved &copy; <span id="year"></span></p>
+                        <p>All right reserved &copy; <span id="year">{new Date().getFullYear()}</span></p>
                 </div>
                 </div>
             </footer>

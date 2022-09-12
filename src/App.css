@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif !important;
+  color: #545454;
 }
 
 /* *{
@@ -59,10 +62,10 @@
   border-radius: 4px;
 }
 .blue{
-  background-color: #0d6efd;
+  background-color: #4687ea;
 }
 .pink{
-  background-color: #dd4390d2;
+  background-color: #e676aed2;
 }
 
 .hire{
@@ -76,11 +79,11 @@
   filter: brightness(0.9);
 }
 
-.right-in {
+.slide .right-in {
   animation: fadeInRight;
   animation-duration: 2s;
 }
-.left-in{
+.slide .left-in{
   animation: fadeInLeft;
   animation-duration: 2s;
 }
@@ -91,4 +94,24 @@
 .zoom {
   animation: zoomInLeft;
   animation-duration: 2s;
+}
+.contribution .headShake{
+  animation: headShake;
+  animation-duration: 500ms;
+}
+.contribution .bounceIn{
+  animation: flipInX;
+  animation-duration: 500ms;
+}
+
+.stacks .speed-in-right{
+  animation: lightSpeedInRight;
+  animation-duration: 2s;
+}
+.carousel{
+  height: 380px;
+  margin: auto;
+}
+.p-title{
+  width: fit-content;
 }

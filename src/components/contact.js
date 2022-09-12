@@ -1,9 +1,17 @@
+import { useEffect, useRef } from "react";
 import { Col, Row } from "react-bootstrap";
+import observe from "./observer";
 
 const Contact = () => {
+    const ref = useRef();
+    useEffect(() => {
+        if (ref.current) {
+            observe(ref.current);
+        }
+    })
     return ( 
         <>
-            <section id="Contact" className="contact jack">
+            <section ref={ref} id="Contact" className="contact" data-animate="jack">
                 <div className="sub-heading">
                 <h2 className="heading-secondary">Contact me</h2>
                 <p className="text-paragraph-16">Contact me for freelance/contract work, consulting, or if you want to chat! I'd be

@@ -6,14 +6,20 @@ import Portfolios from "./portfolio";
 import Services from "./services";
 import Footer from "./footer";
 import NavBar from "./navbar";
-import arrow from "../images/icons/arrow-up.svg";
-import { Link } from "react-router-dom";
+import { useEffect, useRef } from "react";
+import observe from "./observer";
 
 const Home = () => {
+    const ref = useRef();
+    useEffect(() => {
+        if (ref.current) {
+            observe(ref.current);
+        }
+    })
     return ( 
         <>
         <NavBar />
-            <header className="header zoom">
+            <header ref={ref} className="header" data-animate="zoom">
                 <div className="header-container">
                     <div className="header-content text-start">
                         <h1 className="heading-primary">Hello, I’m Quadri</h1>
@@ -31,9 +37,6 @@ const Home = () => {
             <Portfolios />
             <About />
             <Contact />
-            <Link to="#" className="back-to-top d-flex align-items-center justify-content-center">
-            <img src={arrow} alt="" />
-            </Link>
             <Footer />
         </>
      );

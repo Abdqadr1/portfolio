@@ -1,20 +1,19 @@
 import { useEffect, useRef } from "react";
 import profile from "../images/profile.png";
+import observe from "./observer";
 const About = () => {
     const aboutRef = useRef();
     useEffect(() => {
         if (aboutRef.current) {
-            aboutRef.current.addEventListener("focus", e => {
-                console.log("focus..");
-            })
+            observe(aboutRef.current);
         }
     })
     return ( 
         <>
-             <section id="About" className="about text-start">
+             <section ref={aboutRef} id="About" className="about text-start" data-animate="slide">
                 <div className="about-container">
                     <img src={profile} alt="profile" className="left-in" />
-                    <div ref={aboutRef} className="about-content right-in" tabIndex="0">
+                    <div className="about-content right-in" tabIndex="0">
                         <h2 className="heading-secondary">About me</h2>
                         <p className="text-paragraph-16">I'm Ronny. I love connecting with people and learning. I am a fulltime freelancer
                         </p>

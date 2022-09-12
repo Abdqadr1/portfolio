@@ -5,13 +5,13 @@ const Project = ({ image, type, name }) => {
     const colour = colours[Math.ceil(Math.random() * colours.length - 1)]
     return ( 
         <>
-            <div className="portfolio-card text-start">
+            <Link to={"/detail/"+name} className="portfolio-card text-start">
                 <img src={image} alt={name} className={"p-image " + colour} />
-                <Link to={"/detail/"+name} className="portfolio-card-content">
+                <div className="portfolio-card-content text-decoration-none">
                     <h3 className="heading-tertiary">{name}</h3>
                     <p className="text-paragraph-16">{type}</p>
-                </Link>
-            </div>
+                </div>
+            </Link>
         </>
      );
 }
