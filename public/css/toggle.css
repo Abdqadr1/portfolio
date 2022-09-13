@@ -1,5 +1,5 @@
 .dark-mode{
-    --primary-color: #eee;
+    --primary-color: rgba(245, 231, 231, 0.9);
     --hover-color: #7562E0;
     --color: #000;
     --bg-color: #000;

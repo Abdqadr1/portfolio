@@ -14,7 +14,7 @@ const Contact = () => {
             <section ref={ref} id="Contact" className="contact" data-animate="jack">
                 <div className="sub-heading">
                 <h2 className="heading-secondary">Contact me</h2>
-                <p className="text-paragraph-16">Contact me for freelance/contract work, consulting, or if you want to chat! I'd be
+                <p className="text-paragraph-16">Contact me for contract/freelance work, consulting, or if you want to chat! I'd be
                     happy to hear from you.</p>
                 </div>
                 

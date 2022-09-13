@@ -55,6 +55,9 @@
 .dark-mode .navbar-toggler, .dark-mode .navbar-toggler-icon{
     background-color: var(--nav-color);
 }
+.dark-mode .logo{
+    background-color: var(--primary-color);
+}
 
 @media screen and (max-width: 768px) {
 
