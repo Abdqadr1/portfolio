@@ -16,6 +16,11 @@ const ProjectDetails = () => {
         if (ref.current) {
             observe(ref.current);
         }
+        // remove scroll progress bar
+        const progressBar = document.querySelector(".progressbar");
+        if (progressBar) progressBar.classList.remove("show")
+        
+
     });
 
     // animation 

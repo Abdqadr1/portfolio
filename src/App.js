@@ -20,9 +20,9 @@ function App() {
     return (
       <div className="App">
         <motion.div
-            style={{ scaleX: scrollYProgress }} 
-            className="progressbar"
-            />
+          style={{ scaleX: scrollYProgress }} 
+          className="progressbar show"
+        />
         <AnimatePresence>
           <Routes key={location.pathname} location={location}>
             <Route exact path='/' element={<Home />} />

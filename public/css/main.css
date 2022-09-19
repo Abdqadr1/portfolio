@@ -703,17 +703,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #F9F9F9;
 }
 
-.portfolio-container {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 60px;
-  display: -ms-grid;
-  display: grid;
-      grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  row-gap: 45px;
-  -ms-grid-columns: (1fr)[2];
-}
+
 
 @media only screen and (max-width: 37.5em) {
   .portfolio-container {

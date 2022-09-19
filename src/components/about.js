@@ -25,10 +25,8 @@ const About = () => {
               fulltime web developer
             </p>
             <p className="text-paragraph-16">
-              I'm a full stack developer focusing on the creation and deployment
-              of usable and enjoyable web applications. I'm also an entry level
-              DevOps engineer and I would like an opportunity get better in that
-              regard.
+              I'm also an entry level DevOps engineer and I would like an opportunity get better in that
+              regard. I'm always enthusiastic to learn new skills and improve the ones I already have.
             </p>
             <p className="text-paragraph-16">
               Contact me for contract/freelance work, consulting, or if you want

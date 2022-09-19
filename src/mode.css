@@ -90,5 +90,9 @@
         height: 350px;
         margin: auto;
     }
+
+    .p-image{
+        height: 250px;
+    }
     
 }

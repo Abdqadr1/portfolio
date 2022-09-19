@@ -61,6 +61,8 @@
   padding: 10px;
   height: 400px;
   border-radius: 4px;
+  width: 100%;
+  transition: all .15s ease-in;
 }
 .blue{
   background-color: #4687ea;
@@ -122,6 +124,10 @@
     background: #ff0055;
     transform-origin: 0%;
     z-index: 9999;
+    opacity: 0;
+}
+.show{
+  opacity: 1 !important;
 }
 .p-title{
   width: fit-content;
