@@ -113,6 +113,16 @@
   height: 450px;
   margin: auto;
 }
+.progressbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: #ff0055;
+    transform-origin: 0%;
+    z-index: 9999;
+}
 .p-title{
   width: fit-content;
 }
@@ -127,4 +137,14 @@
 .dark-toggle{
   cursor: pointer;
   color: var(--nav-color);
+}
+
+.btn-resume{
+  width: fit-content;
+  background-color: #5e4eb3 !important;
+  border-color: #5e4eb3 !important;
+}
+.btn-resume:hover{
+  background-color: #6c5cbc !important;
+  border-color: #6c5cbc !important;
 }

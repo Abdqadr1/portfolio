@@ -40,7 +40,7 @@ const projects = [
         type: "API",
         images: [portfolio31, portfolio32],
         client: "Personal Project",
-        url: "http://api-env.eba-irpspqyp.us-east-1.elasticbeanstalk.com/country/all",
+        url: "http://api-env.eba-irpspqyp.us-east-1.elasticbeanstalk.com/docs",
         description: "A REST Api for all the countries in the world and all the local banks in Nigeria",
         contribution: "Spring REST API with MySQL database and a react app for monitoring the api with the help of spring actuator."
     }

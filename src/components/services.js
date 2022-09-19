@@ -21,7 +21,7 @@ const Services = () => {
                     </div>
                     <div className="service-card">
                         <img src={icon3} alt=""/>
-                        <h3 className="heading-tertiary">DevOps</h3>
+                        <h3 className="heading-tertiary">DevOps Engineering</h3>
                         <p className="text-paragraph-16">CI/CD, Security, Collaboration. Experienced gained from working with popular cloud platforms including AWS and GCP </p>
                     </div>
                     {/* <div className="service-card">

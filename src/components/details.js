@@ -4,6 +4,9 @@ import { useParams } from "react-router";
 import projects from "./allproject";
 import observe from "./observer";
 import DarkMode from "./dark-mode";
+import { motion } from "framer-motion";
+import { Icon } from '@iconify/react';
+import { Link } from "react-router-dom";
 
 const ProjectDetails = () => {
     const { name } = useParams();
@@ -13,14 +16,53 @@ const ProjectDetails = () => {
         if (ref.current) {
             observe(ref.current);
         }
-    })
+    });
+
+    // animation 
+    const containerVariants = {
+        hidden: {
+            opacity: 0,
+            x: "100vw"
+        },
+        visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                type: "spring",
+                delay: .8,
+                duration: 2
+            }
+        },
+        exit: {
+            x: "-100vw",
+            transition: {
+                ease: "easeInOut",
+                duration: 1
+            }
+        }
+    }
+
     if (!project) return <h3 className="fw-bold mt-5">Not found</h3>
-    return ( 
+    return (
+        <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            className="motioning"
+        >
         <div className="pb-4 pt-2">
             <Container>
-                <div className="d-flex justify-content-between">
-                    <h2 className="heading-secondary fs-3 text-start mt-2 mb-4 ps-3">{project.name}</h2>
-                    <DarkMode/>
+                <div className="d-flex justify-content-between position-relative">
+                    <div className="d-flex justify-content-start">
+                        <Link to="/" className="home-icon me-4">
+                            <Icon className="fs-4 dark-toggle" icon="mdi:home" />
+                        </Link>
+                        <h2 className="heading-secondary fs-3 text-start mt-2 mb-4 ms-5">{project.name}</h2>
+                    </div>
+                    <div className="my-position ms-3">
+                        <DarkMode />
+                    </div>
                 </div>
             </Container>
             <Row className="justify-content-center mx-0 px-5">
@@ -59,6 +101,7 @@ const ProjectDetails = () => {
             </section>
             
         </div>
+        </motion.div> 
      );
 }
  

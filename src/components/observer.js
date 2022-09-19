@@ -11,7 +11,8 @@ const observe = (element) => {
             
         })
     }, {
-        threshold: 0.7,
+        threshold: 1,
+        rootMargin: "100px 0px"
     });
 
     observer.observe(element);

@@ -1,4 +1,12 @@
 /* for light mode  */
+*{
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+    transition: color 1000ms;
+}
 .light .bg-white{
    background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -36,7 +44,8 @@
     background-color: var(--hover-color);
 }
 
-.dark-mode .bg-body{
+.dark-mode .bg-body,
+.dark-mode .motioning{
     background-color: var(--bg-color) !important;
     color: var(--txt-color);
 }
@@ -58,6 +67,16 @@
 .dark-mode .logo{
     background-color: var(--primary-color);
 }
+.home-icon{
+    position: absolute;
+    top: calc(14px);
+    color: #545454;
+}
+.my-position{
+    position: absolute;
+    top: calc(18px);
+    right: calc(0% + 14px);
+}
 
 @media screen and (max-width: 768px) {
 
@@ -65,6 +84,11 @@
         position: absolute;
         left: calc(50% - 22.6px);
         top: calc(14px)
+    }
+
+    .carousel {
+        height: 350px;
+        margin: auto;
     }
     
 }

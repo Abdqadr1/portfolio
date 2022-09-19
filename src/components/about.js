@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import profile from "../images/profile.png";
+import qprofile from "../images/qprofile.png";
 import observe from "./observer";
 const About = () => {
   const aboutRef = useRef();
@@ -17,7 +17,7 @@ const About = () => {
         data-animate="slide"
       >
         <div className="about-container">
-          <img src={profile} alt="profile" className="left-in" />
+          <img src={qprofile} alt="profile" className="left-in" />
           <div className="about-content right-in" tabIndex="0">
             <h2 className="heading-secondary">About me</h2>
             <p className="text-paragraph-16">
@@ -32,8 +32,12 @@ const About = () => {
             </p>
             <p className="text-paragraph-16">
               Contact me for contract/freelance work, consulting, or if you want
-              to chat! I'd be happy to hear from you.
+              to chat! I'd be happy to hear from you. 
             </p>
+            
+            <a className="btn btn-resume btn-primary" target="blank" href="https://drive.google.com/file/d/1wP6ZDWv_StjxPExM64oNFQNwcRnQDHM7/view?usp=sharing">
+              Download Resume
+            </a>
           </div>
         </div>
       </section>

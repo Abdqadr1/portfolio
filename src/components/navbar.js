@@ -21,6 +21,7 @@ const NavBar = () => {
                     <Nav className="ms-auto text-start">
                         <Nav.Link href="#Service">Service</Nav.Link>
                         <Nav.Link href="#Portfolio">Portfolio</Nav.Link>
+                        <Nav.Link href="#About">About</Nav.Link>
                         <Nav.Link href="#Contact">Contact</Nav.Link>
                     </Nav>
                     <Nav className="ms-auto text-start flex-row">
