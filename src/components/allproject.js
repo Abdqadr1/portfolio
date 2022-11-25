@@ -7,6 +7,10 @@ import portfolio31 from "../images/project/b1.png";
 import portfolio32 from "../images/project/b2.png";
 import portfolio41 from "../images/project/gen1.png";
 import portfolio42 from "../images/project/gen2.png";
+import portfolio51 from "../images/project/eca1.png";
+import portfolio52 from "../images/project/eca2.png";
+import portfolio61 from "../images/project/chat1.png";
+import portfolio62 from "../images/project/chat2.png";
 const projects = [
     {
         name: "Fabex",
@@ -22,9 +26,28 @@ const projects = [
         type: "Web App",
         images: [portfolio21, portfolio22],
         client: "Personal Project",
-        url: "https://qshop-frontend.herokuapp.com",
+        url: "http://qadrcommerce.us-east-1.elasticbeanstalk.com/",
         description: "An ecommerce website just like jumia for buying and selling of different kinds of goods.",
         contribution: "This is a personal project i did to showcase my knowledge of react library and spring framework. The website features oauth authentication for both Google and Facebook, Paypal payment api, Amazon S3, MySQL database, and more. The website was deployed to heroku"
+    },
+    {
+        name: "Ecommerce Admin Website",
+        type: "Web App",
+        images: [portfolio51, portfolio52],
+        client: "Personal Project",
+        url: "http://ecommerceadmin-env.eba-wbrsjscb.us-east-1.elasticbeanstalk.com/",
+        description: "An administrator website for the management of the ecommerce website",
+        contribution: "This is also a personal project I did to showcase my knowledge of react library, spring Boot, and other third-party apis. The website features oauth authentication for both Google and Facebook, Paypal payment api, Amazon S3, MySQL database, and more. The website was deployed to heroku"
+    },
+
+    {
+        name: "Chat App",
+        type: "Web App",
+        images: [portfolio61, portfolio62],
+        client: "Personal Project",
+        url: "http://ecommerce.eba-wbrsjscb.us-east-1.elasticbeanstalk.com/",
+        description: "An ecommerce website just like jumia for buying and selling of different kinds of goods.",
+        contribution: "This is a personal project i did to showcase my knowledge of react library and spring Boot ( Websocket, MongoDB, and Security). The website features jwt authentication for user authentication and authorization, Amazon S3, Mongo database. The website was deployed to AWS ElasticBeanStalk"
     },
     {
         name: "GeneralFalad",
