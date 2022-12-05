@@ -45,9 +45,9 @@ const projects = [
         type: "Web App",
         images: [portfolio61, portfolio62],
         client: "Personal Project",
-        url: "http://ecommerce.eba-wbrsjscb.us-east-1.elasticbeanstalk.com/",
+        url: "https://qadr-chat.up.railway.app/",
         description: "An ecommerce website just like jumia for buying and selling of different kinds of goods.",
-        contribution: "This is a personal project i did to showcase my knowledge of react library and spring Boot ( Websocket, MongoDB, and Security). The website features jwt authentication for user authentication and authorization, Amazon S3, Mongo database. The website was deployed to AWS ElasticBeanStalk"
+        contribution: "This is a personal project i did to showcase my knowledge of react library and spring Boot ( Websocket, MongoDB, and Security). The website features jwt authentication for user authentication and authorization, Amazon S3, Mongo database. The website was deployed to Railway"
     },
     {
         name: "GeneralFalad",
@@ -58,15 +58,15 @@ const projects = [
         description: "A website for easy payment of airtime, data and utility bills. Convert airtime to cash in Nigeria, Make payment with airtime, Send and receive payment in Nigeria with airtime",
         contribution: "I was in charge of maintaining the website for 7+ months. During my time, I was tasked with adding new features (e.g transferring fund between users, new payment system with Paystack API, and more) to the website and fixing bugs."
     },
-    {
-        name: "Bank & Countries API",
-        type: "API",
-        images: [portfolio31, portfolio32],
-        client: "Personal Project",
-        url: "http://api-env.eba-irpspqyp.us-east-1.elasticbeanstalk.com/docs",
-        description: "A REST Api for all the countries in the world and all the local banks in Nigeria",
-        contribution: "Spring REST API with MySQL database and a react app for monitoring the api with the help of spring actuator."
-    }
+    // {
+    //     name: "Bank & Countries API",
+    //     type: "API",
+    //     images: [portfolio31, portfolio32],
+    //     client: "Personal Project",
+    //     url: "http://api-env.eba-irpspqyp.us-east-1.elasticbeanstalk.com/docs",
+    //     description: "A REST Api for all the countries in the world and all the local banks in Nigeria",
+    //     contribution: "Spring REST API with MySQL database and a react app for monitoring the api with the help of spring actuator."
+    // }
 ]
 
 export default projects;
